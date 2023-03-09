@@ -3,6 +3,13 @@ import "./Sidebar.css";
 import { Avatar } from "@mui/material";
 
 export const SideBar = () => {
+  const recentItems = (topics) => (
+    <div className="side_recentItems">
+      <span className="recentItems_Hash">#</span>
+      <p>{topics}</p>
+    </div>
+  );
+
   return (
     <div className="sidebar">
       <div className="sidebar_top">
@@ -24,8 +31,11 @@ export const SideBar = () => {
           <p className="side_bar_statNumber">3,347</p>
         </div>
       </div>
-      <div className="sidebar_button">
+      <div className="sidebar_buttom">
         <p>Recent</p>
+        <p>{recentItems("React.js")}</p>
+        <p>{recentItems("React.js")}</p>
+        <p>{recentItems("React.js")}</p>
       </div>
     </div>
   );
