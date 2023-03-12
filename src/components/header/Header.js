@@ -17,7 +17,7 @@ export const Header = () => {
         <img src="https://www.svgrepo.com/show/110195/linkedin.svg" alt="" />
         <div className="header_search">
           <Search />
-          <input type="text" />
+          <input placeholder="Search..." type="text" />
         </div>
       </div>
       <div className="header_right">
